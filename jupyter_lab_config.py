@@ -11,8 +11,7 @@ c.ServerApp.port = 8888
 c.ServerApp.token = ''
 c.ServerApp.tornado_settings = {
     'headers': {
-         'Content-Security-Policy': 'frame-ancestors self http://localhost:3000',
-         'Content-Security-Policy': "frame-ancestors 'self' http://localhost:* https://localhost:* ;",
+         'Content-Security-Policy': "frame-ancestors 'self' http://localhost:* https://localhost:* ;"
     },
     'cookie_options': {
         'SameSite': 'None',
